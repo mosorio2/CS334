@@ -1,0 +1,82 @@
+I pledge my honor that I have abided by the Stevens Honor System- Michael Osorio
+name: Fibonacci Sequence
+init: Start
+accept: qAccept
+
+Start, _, _, _
+qAccept, _, _, _, -, -, -
+
+Start, 0, _, _
+Move, 0, _, 0, -, -, -
+
+Move, 0, _, 0
+Check, 0, _, 0, -, -, -
+
+Move, 0, 0, _
+Move, 0, 0, _, -, >, <
+
+Move, 0, 0, 0
+Move, 0, 0, 0, -, >, <
+
+Move, 0, _, _
+Shift, 0, _, _, -, <, -
+
+Shift, 0, 0, _
+Shift, 0, 0, 0, -, <, >
+
+Shift, 0, _, 0
+q1, 0, _, 0, -, >, -
+
+q1, 0, _, 0
+q1, 0, 0, 0, -, >, >
+
+q1, 0, 0, 0
+q1, 0, 0, 0, -, >, >
+
+q1, 0, _, _
+q2, 0, _, _, -, <, <
+
+q2, 0, 0, 0
+q2, 0, 0, 0, -, <, <
+
+q2, 0, _, 0
+q2, 0, _, 0, -, -, <
+
+q2, 0, 0, _
+q2, 0, 0, _, -, <, -
+
+q2, 0, _, _
+Check, 0, _, _, -, >, >
+
+Check, 0, 0, 0
+Check, 0, 0, 0, >, >, -
+
+Check, 0, _, 0
+Check, 0, _, 0, >, -, >
+
+Check, _, _, _
+qAccept, _, _, _, -, -, -
+
+Check, 0, _, _
+Back, 0, _, _, -, <, <
+
+Back, 0, 0, 0
+Back, 0, 0, 0, -, <, <
+
+Back, 0, _, _
+Back, 0, _, _, <, -, -
+
+Back, 0, _, 0
+Back, 0, _, 0, -, -, <
+
+Back, 0, 0, _
+Back, 0, 0, _, -, <, -
+
+Back2, 0, 0, 0
+Move, 0, 0, 0, -, -, -
+
+Back, _, _, _
+Back2, _, _, _, >, >, >
+
+Back2, 0, _, 0
+Check, 0, 0, 0, -, -, -
